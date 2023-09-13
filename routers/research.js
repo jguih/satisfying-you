@@ -4,23 +4,23 @@ const router = express.Router();
 const options = require('../config/sendFileOptions')
 
 router.use('/create', (req, res) => {
-  res.sendFile('/create-research.html', options)
+  res.render('create-research')
 })    
 
 router.use('/edit', (req, res) => {
-  res.sendFile('/edit-research.html', options)
+  res.render('edit-research')
 })
 
 router.use('/collect', (req, res) => {
-  res.sendFile('/collect-research.html', options)
+  res.render('collect-research')
 })
 
 router.use('/report', (req, res) => {
-  res.sendFile('/research-report.html', options)
+  res.render('research-report')
 })
 
 router.use('/thanks', (req, res) => {
-  res.sendFile('/research-thanks.html', options)
+  res.render('research-thanks')
 })
 
 module.exports = router
