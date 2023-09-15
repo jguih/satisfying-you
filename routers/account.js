@@ -1,14 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-const options = require('../config/sendFileOptions')
-
 router.use('/create', (req, res) => {
-  res.sendFile('/create-account.html', options)
+  res.render('create-account')
 })  
 
 router.use('/recover-password', (req, res) => {
-  res.sendFile('/recover-password.html', options)
+  res.render('recover-password')
 })  
 
 module.exports = router
