@@ -1,0 +1,32 @@
+
+form {
+  width: fit-content;
+  margin: auto auto;
+  border-radius: 16px;
+  border: solid gray;
+  padding: 24px;
+}
+
+label,
+label input,
+label span {
+  display: block;
+}
+
+label input {
+  margin-top: 4px;
+}
+
+.field-error {
+  color: red;
+}
+
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.mt-4 {
+  margin-top: 8px;
+}

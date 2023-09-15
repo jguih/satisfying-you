@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-const options = require('../config/sendFileOptions')
-
 router.use('/create', (req, res) => {
   res.render('create-research')
 })    

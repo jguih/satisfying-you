@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/global.css" type="text/css">
+  <link rel="stylesheet" href="styles/views/login/login.css" type="text/css">
   <title>Login</title>
 </head>
 
@@ -19,12 +20,19 @@
       <label>
         <span>Email</span>
         <input type="email"/>
+        <span class="field-error"></span>
       </label>
 
-      <label>
+      <label class="mt-4">
         <span>Password</span>
         <input type="password"/>
+        <span class="field-error"></span>
       </label>
+
+      <div class="action-bar">
+        <a>Create account</a>
+        <button type="submit">Login</button>
+      </div>
     </form>
   </main>
 

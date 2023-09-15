@@ -8,7 +8,7 @@ const port = 3000
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Setup views and view engine
-app.set('views', path.join(__dirname, 'pages'))
+app.set('views', path.join(__dirname, 'views'))
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
