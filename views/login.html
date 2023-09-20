@@ -11,30 +11,36 @@
 
 <body>
 
-  <header>
-    <h2>Satisfying.you</h2>
-  </header>
+  <div class="container">
+    <header>
+      <h2>Satisfying.you</h2>
+    </header>
 
-  <main>
-    <form>
-      <label>
-        <span>Email</span>
-        <input type="email"/>
-        <span class="field-error"></span>
-      </label>
+    <main>
+      <form>
+        <p class="form-title">Login</p>
 
-      <label class="mt-4">
-        <span>Password</span>
-        <input type="password"/>
-        <span class="field-error"></span>
-      </label>
+        <div class="form-content">
+          <label>
+            <span>Email</span>
+            <input type="email" />
+            <span class="field-error"></span>
+          </label>
+  
+          <label class="mt-4">
+            <span>Password</span>
+            <input type="password" />
+            <span class="field-error"></span>
+          </label>
+        </div>
 
-      <div class="action-bar">
-        <a>Create account</a>
-        <button type="submit">Login</button>
-      </div>
-    </form>
-  </main>
+        <div class="form-action-bar">
+          <a href="/account/create">Create account</a>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </main>
+  </div>
 
 </body>
 
